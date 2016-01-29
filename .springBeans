@@ -9,6 +9,8 @@
 	<configs>
 		<config>src/main/resources/beans.xml</config>
 		<config>src/main/resources/wiringbeans.xml</config>
+		<config>src/main/resources/event-handling-beans.xml</config>
+		<config>src/main/resources/datasource-config.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>

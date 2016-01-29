@@ -6,6 +6,9 @@
 		init-method="init" destroy-method="destroy">
 		<property name="name" value="Vo Tan Loc"></property>
 	</bean>
+	
+	<bean
+		class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor" />
 
 	<bean name="pen" class="example.injectinginnerclass.Pen">
 		<property name="color">
@@ -48,5 +51,12 @@
 				<prop key="four">Indo</prop>
 			</props>
 		</property>
+	</bean>
+
+	<bean name="brandBean" class="example.autowwiring.Brand">
+		<property name="name" value="Mercedes"></property>
+	</bean>
+	<bean name="carBean" class="example.autowwiring.Car">
+		<property name="status" value="false"></property>
 	</bean>
 </beans>
